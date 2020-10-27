@@ -34,7 +34,7 @@ class HillfortListActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item?.itemId) {
+        when (item.itemId) {
             R.id.item_add -> startActivityForResult<HillfortActivity>(0)
         }
         return super.onOptionsItemSelected(item)
