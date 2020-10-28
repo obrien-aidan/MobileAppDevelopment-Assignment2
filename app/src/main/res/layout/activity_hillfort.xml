@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.HillfortActivity">
+    tools:context=".activities.HillfortActivity"
+    android:background="@drawable/gradient1">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -50,7 +52,7 @@
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/colorText1"
                     android:textSize="14sp" />
                 <EditText
                     android:id="@+id/description"
@@ -62,7 +64,7 @@
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
+                    android:textColor="@color/colorText1"
                     android:textSize="14sp" />
 
                 <Button
