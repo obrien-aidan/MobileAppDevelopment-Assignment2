@@ -5,10 +5,15 @@ import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.wit.hillfort.models.HillfortModel
 import android.view.*
+import org.wit.hillfort.models.HillfortMemStore
 
 
 class MainApp : Application(), AnkoLogger {
-    val hillforts = ArrayList<HillfortModel>()
+/*
+    val hillfortsorts = ArrayList<HillfortModel>()
+*/
+    val hillforts = HillfortMemStore()
+
 
     override fun onCreate() {
         super.onCreate()
