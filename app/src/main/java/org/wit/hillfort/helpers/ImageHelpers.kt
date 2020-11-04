@@ -18,6 +18,7 @@ fun showImagePicker(parent: Activity, id: Int) {
     val chooser = Intent.createChooser(intent, R.string.select_hillfort_image.toString())
     parent.startActivityForResult(chooser, id)
 }
+
 fun readImage(activity: Activity, resultCode: Int, data: Intent?): Bitmap? {
     var bitmap: Bitmap? = null
     if (resultCode == Activity.RESULT_OK && data != null && data.data != null) {
@@ -29,6 +30,7 @@ fun readImage(activity: Activity, resultCode: Int, data: Intent?): Bitmap? {
     }
     return bitmap
 }
+
 fun readImageFromPath(context: Context, path : String) : Bitmap? {
     var bitmap : Bitmap? = null
     val uri = Uri.parse(path)

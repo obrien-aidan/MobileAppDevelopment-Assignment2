@@ -22,7 +22,6 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
     lateinit var app: MainApp
     val IMAGE_REQUEST = 1
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hillfort)
@@ -41,7 +40,6 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
             description.setText(hillfort.description)
             hillfortImage.setImageBitmap(readImageFromPath(this, hillfort.image))
             btnAdd.setText(R.string.save_hillfort)
-
         }
 
         btnAdd.setOnClickListener() {
@@ -60,14 +58,17 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
             setResult(AppCompatActivity.RESULT_OK)
             finish()
         }
+
         chooseImage.setOnClickListener {
             showImagePicker(this, IMAGE_REQUEST);
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_hillfort, menu)
         return super.onCreateOptionsMenu(menu)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
             R.id.item_cancel -> {
@@ -76,7 +77,6 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
         }
         return super.onOptionsItemSelected(item)
     }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
