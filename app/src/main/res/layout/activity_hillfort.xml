@@ -27,8 +27,10 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarAdd"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:titleTextColor="@color/colorPrimary" />
+                android:layout_height="match_parent"
+                app:titleTextColor="@color/colorPrimary"
+                 />
+
         </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
@@ -111,6 +113,8 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"/>
 
+<!--<include
+    layout="@layout/activity_map"/>-->
 
             </LinearLayout>
         </ScrollView>
