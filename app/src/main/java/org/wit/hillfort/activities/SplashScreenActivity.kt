@@ -5,23 +5,24 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import org.wit.hillfort.R
 
 
 class SplashScreenActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_splash_screen)
-
         supportActionBar?.hide()
 
         Handler().postDelayed({
             val intent = Intent(this@SplashScreenActivity, HillfortListActivity::class.java)
             startActivity(intent)
             finish()
-        }, 4000)
+        }, 2000)
 
         }
     }
