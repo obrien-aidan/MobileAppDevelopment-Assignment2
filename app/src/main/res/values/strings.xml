@@ -18,5 +18,11 @@
     <string name="sign_up">SignUp</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="hillfort_image_placeholder">Hillfort Image</string>
+    <string name="hillfort_title_placeholder">Hillfort Title</string>
+    <string name="hillfort_description_placeholder">Hillfort Description</string>
+    <string name="hillfortPicture" />
+    <string name="hillfortTitle" />
+    <string name="hillfortDescription" />
 
 </resources>
