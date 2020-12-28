@@ -24,5 +24,7 @@
     <string name="hillfortPicture" />
     <string name="hillfortTitle" />
     <string name="hillfortDescription" />
+    <string name="menu_saveHillfort">Save</string>
+
 
 </resources>
