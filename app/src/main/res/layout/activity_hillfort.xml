@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient1">
-    tools:context="org.wit.hillfort.activities.HillfortActivity">
-
+    tools:context="org.wit.hillfort.views.hillfort.HillfortView">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +14,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="-16dp">
-
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -41,9 +37,6 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/appBarLayout"
             android:layout_alignParentBottom="true">
-            android:background="@drawable/gradient1">
-
-
 
 
             <Button
@@ -81,27 +74,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/hillfortImage" />
 
-            <Button
-                android:id="@+id/btnAdd"
-                android:layout_width="379dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
-                android:background="@color/colorAccent"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:stateListAnimator="@null"
-                android:text="@string/button_addHillfort"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/hillfortLocation"
-                app:layout_constraintVertical_bias="0.005" />
-
             <EditText
                 android:id="@+id/description"
                 android:layout_width="394dp"
@@ -114,7 +86,7 @@
                 android:maxLength="25"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/colorText1"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +105,7 @@
                 android:maxLength="25"
                 android:maxLines="1"
                 android:padding="8dp"
-                android:textColor="@color/colorText1"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -154,5 +126,4 @@
 
 
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

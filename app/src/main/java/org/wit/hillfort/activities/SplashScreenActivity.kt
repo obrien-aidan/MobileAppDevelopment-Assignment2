@@ -7,6 +7,7 @@ import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import org.wit.hillfort.R
+import org.wit.hillfort.views.hillfortlist.HillfortListView
 
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this@SplashScreenActivity, HillfortListActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, HillfortListView::class.java)
             startActivity(intent)
             finish()
         }, 2000)

@@ -42,7 +42,7 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
         var edit = false
 */
 
-        if (intent.hasExtra("hillfort_edit")) {
+/*        if (intent.hasExtra("hillfort_edit")) {
             edit = true
             hillfort = intent.extras?.getParcelable<HillfortModel>("hillfort_edit")!!
             hillfortTitle.setText(hillfort.title)
@@ -70,7 +70,7 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
             info("add Button Pressed: $hillfortTitle")
             setResult(AppCompatActivity.RESULT_OK)
             finish()
-        }
+        }*/
 
         chooseImage.setOnClickListener {
             showImagePicker(this, IMAGE_REQUEST);

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.wit.hillfort.activities.HillfortActivity"
+    tools:context=".views.location.EditLocationView"
     android:background="@drawable/gradient1">
 
 
@@ -40,7 +40,7 @@
                 android:layout_height="675dp"
 
 
-                tools:context=".activities.MapActivity" />
+                tools:context=".views.location.EditLocationView" />
 
 
 
