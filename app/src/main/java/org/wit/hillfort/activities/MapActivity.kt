@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBar
+import androidx.lifecycle.Transformations.map
 import androidx.navigation.NavController
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -28,7 +29,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback,  GoogleMap.OnMarker
 
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+/*    override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
@@ -37,13 +38,13 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback,  GoogleMap.OnMarker
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
-/*       Add UP button
-        REFERENCE = https://www.youtube.com/watch?v=TcJysB6hp8Q*/
+*//*       Add UP button
+        REFERENCE = https://www.youtube.com/watch?v=TcJysB6hp8Q*//*
         setSupportActionBar(toolbarMap)
         val actionBar = supportActionBar
         actionBar!!.title = hillfort.title
         actionBar!!.setDisplayHomeAsUpEnabled(true)
-    }
+    }*/
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()

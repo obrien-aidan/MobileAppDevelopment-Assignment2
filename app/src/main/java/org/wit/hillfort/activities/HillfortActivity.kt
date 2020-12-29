@@ -75,7 +75,7 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
         chooseImage.setOnClickListener {
             showImagePicker(this, IMAGE_REQUEST);
         }
-        hillfortLocation.setOnClickListener {
+/*        hillfortLocation.setOnClickListener {
             val location = Location(52.245696, -7.139102, 15f)
             if (hillfort.zoom != 0f) {
                 location.lat =  hillfort.lat
@@ -83,7 +83,7 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
                 location.zoom = hillfort.zoom
             }
             startActivityForResult(intentFor<MapActivity>().putExtra("location", location), LOCATION_REQUEST)
-        }
+        }*/
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
