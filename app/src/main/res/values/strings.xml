@@ -25,6 +25,9 @@
     <string name="hillfortTitle" />
     <string name="hillfortDescription" />
     <string name="menu_saveHillfort">Save</string>
+    <string name="title_activity_hillfort_list">Hillforts</string>
+    <string name="title_activity_hillfort">Hillfort</string>
+    <string name="title_activity_location">Hillfort</string>
 
 
 </resources>
