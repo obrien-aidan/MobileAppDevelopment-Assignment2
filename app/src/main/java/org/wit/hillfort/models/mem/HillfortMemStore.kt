@@ -33,6 +33,8 @@ class HillfortMemStore : HillfortStore, AnkoLogger {
             foundHillfort.image = hillfort.image
             foundHillfort.location = hillfort.location
             foundHillfort.rating = hillfort.rating
+            foundHillfort.favourite = hillfort.favourite
+
 
             logAll();
         }

@@ -36,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/appBarLayout"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="148dp"
-            android:layout_marginBottom="-148dp">
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="-32dp">
 
 
             <Button
@@ -157,18 +157,35 @@
             <RatingBar
                 android:id="@+id/rating1"
                 style="@android:style/Widget.Material.RatingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="248dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="13dp"
                 android:numStars="5"
                 android:rating="1"
-                android:layout_marginStart="81dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="90dp"
-                android:layout_marginBottom="13dp"
                 app:layout_constraintBottom_toTopOf="@+id/chooseImage"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description" />
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                app:layout_constraintVertical_bias="0.222" />
+
+            <ToggleButton
+                android:id="@+id/favourite1"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:background="@drawable/button_favorite"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                app:layout_constraintBottom_toTopOf="@+id/chooseImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toEndOf="@+id/rating1"
+                app:layout_constraintTop_toBottomOf="@+id/lng"
+                app:layout_constraintVertical_bias="0.725" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

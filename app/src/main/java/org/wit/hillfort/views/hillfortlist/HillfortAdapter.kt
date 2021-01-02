@@ -47,6 +47,8 @@ class HillfortAdapter constructor(
             itemView.hillfortTitle.text = hillfort.title
             itemView.description.text = hillfort.description
             itemView.rating.rating = hillfort.rating
+            itemView.favourite.isChecked = hillfort.favourite
+
 
             Glide.with(itemView.context).load(hillfort.image).into(itemView.imageIcon);
             itemView.setOnClickListener { listener.onHillfortClick(hillfort) }
