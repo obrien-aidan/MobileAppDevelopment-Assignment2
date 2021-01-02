@@ -1,3 +1,4 @@
+/*
 package org.wit.hillfort.activities
 
 import android.content.Intent
@@ -38,10 +39,13 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
 
         app = application as MainApp
 
+*/
 /*
         var edit = false
-*/
+*//*
 
+
+*/
 /*        if (intent.hasExtra("hillfort_edit")) {
             edit = true
             hillfort = intent.extras?.getParcelable<HillfortModel>("hillfort_edit")!!
@@ -70,11 +74,13 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
             info("add Button Pressed: $hillfortTitle")
             setResult(AppCompatActivity.RESULT_OK)
             finish()
-        }*/
+        }*//*
+
 
         chooseImage.setOnClickListener {
             showImagePicker(this, IMAGE_REQUEST);
         }
+*/
 /*        hillfortLocation.setOnClickListener {
             val location = Location(52.245696, -7.139102, 15f)
             if (hillfort.zoom != 0f) {
@@ -83,7 +89,8 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
                 location.zoom = hillfort.zoom
             }
             startActivityForResult(intentFor<MapActivity>().putExtra("location", location), LOCATION_REQUEST)
-        }*/
+        }*//*
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -105,7 +112,8 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+*/
+/*    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode) {
             IMAGE_REQUEST -> {
@@ -124,6 +132,8 @@ class HillfortActivity : AppCompatActivity(), AnkoLogger {
                 }
             }
         }
-    }
+    }*//*
+
 }
 
+*/

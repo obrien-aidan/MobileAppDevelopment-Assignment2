@@ -57,6 +57,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/description" />
 
+
             <EditText
                 android:id="@+id/description"
                 android:layout_width="249dp"
@@ -152,6 +153,7 @@
                 android:textAlignment="center"
                 app:layout_constraintStart_toEndOf="@+id/hillfortTitle"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

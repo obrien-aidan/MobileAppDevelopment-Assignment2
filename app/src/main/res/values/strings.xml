@@ -28,6 +28,8 @@
     <string name="title_activity_hillfort_list">Hillforts</string>
     <string name="title_activity_hillfort">Hillfort</string>
     <string name="title_activity_location">Hillfort</string>
-
+    <string name="title_activity_login"> Signup/Login to Hillfort</string>
+    <string name="menu_showMap">Show Map</string>
+    <string name="menu_logout">Logout</string>
 
 </resources>

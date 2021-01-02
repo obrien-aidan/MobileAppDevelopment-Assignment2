@@ -1,3 +1,4 @@
+/*
 package org.wit.hillfort.activities
 
 import android.os.Bundle
@@ -30,7 +31,8 @@ class HillfortMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListene
         }
     }
 
-    fun configureMap() {
+*/
+/*    fun configureMap() {
         map.uiSettings.setZoomControlsEnabled(true)
         app.hillforts.findAll().forEach {
             val loc = LatLng(it.lat, it.lng)
@@ -40,7 +42,8 @@ class HillfortMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListene
             map.setOnMarkerClickListener(this)
 
         }
-    }
+    }*//*
+
     override fun onDestroy() {
         super.onDestroy()
         mapView.onDestroy()
@@ -73,4 +76,4 @@ class HillfortMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListene
         currentImage.setImageBitmap(readImageFromPath(this, hillfort.image))
         return true
     }
-}
+}*/
