@@ -40,7 +40,7 @@ class HillfortView : BaseView(), AnkoLogger {
         presenter = initPresenter (HillfortPresenter(this)) as HillfortPresenter
 
         chooseImage.setOnClickListener {
-            presenter.cacheHillfort(hillfortTitle.text.toString(), description.text.toString(), rating1.rating.toFloat())
+            presenter.cacheHillfort(hillfortTitle.text.toString(), description.text.toString(), rating1.rating,favourite1.isChecked)
             presenter.doSelectImage()
         }
 
@@ -54,7 +54,10 @@ class HillfortView : BaseView(), AnkoLogger {
         if (hillfortTitle.text.isEmpty()) hillfortTitle.setText(hillfort.title)
         if (description.text.isEmpty())  description.setText(hillfort.description)
         rating1.setRating(hillfort.rating)
+        favourite1.setChecked(hillfort.favourite)
+
         Glide.with(this).load(hillfort.image).into(hillfortImage);
+
 
         if (hillfort.image != null) {
             chooseImage.setText(R.string.change_hillfort_image)
@@ -103,7 +106,7 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
             if (hillfortTitle.text.toString().isEmpty()) {
                 toast(R.string.enter_hillfort_title)
             } else {
-                presenter.doAddOrSave(hillfortTitle.text.toString(), description.text.toString(),rating1.getRating())
+                presenter.doAddOrSave(hillfortTitle.text.toString(), description.text.toString(),rating1.getRating(),favourite1.isChecked())
             }
         }
         R.id.item_cancel -> {

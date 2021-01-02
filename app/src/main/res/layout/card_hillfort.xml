@@ -46,18 +46,35 @@
             android:textColor="@color/colorPrimary"
             />
     <RatingBar
-        android:id="@+id/rating"
-        style="@android:style/Widget.Material.RatingBar.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    android:id="@+id/rating"
+    style="@android:style/Widget.Material.RatingBar.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="21dp"
+    android:clickable="false"
+    android:contextClickable="false"
+    android:numStars="5"
+    android:rating="1" />
+
+
+    <ToggleButton
+        android:id="@+id/favourite"
+
+        android:layout_width="99dp"
+        android:layout_height="98dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_favorite"
+        android:checked="false"
         android:clickable="false"
         android:contextClickable="false"
-        android:numStars="5"
-        android:rating="1" />
-
-    </RelativeLayout>
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+</RelativeLayout>
 </androidx.cardview.widget.CardView>

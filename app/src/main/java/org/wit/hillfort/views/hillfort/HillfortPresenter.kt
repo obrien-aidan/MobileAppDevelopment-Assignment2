@@ -75,10 +75,11 @@ class HillfortPresenter(view: BaseView) : BasePresenter(view) {
         }
     }
 
-    fun cacheHillfort (title: String, description: String, rating:Float) {
+    fun cacheHillfort (title: String, description: String, rating:Float, favourite:Boolean) {
         hillfort.title = title;
         hillfort.description = description
         hillfort.rating = rating
+        hillfort.favourite = favourite
 
     }
 
@@ -97,10 +98,12 @@ class HillfortPresenter(view: BaseView) : BasePresenter(view) {
         view?.showLocation(hillfort.location)
     }
 
-    fun doAddOrSave(title: String, description: String,rating: Float) {
+    fun doAddOrSave(title: String, description: String,rating: Float,favourite: Boolean) {
         hillfort.title = title
         hillfort.description = description
         hillfort.rating = rating
+        hillfort.favourite = favourite
+
 
         doAsync {
             if (edit) {
