@@ -2,12 +2,16 @@ package org.wit.hillfort.views.hillfortlist
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.*
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_hillfort_list.*
 import org.wit.hillfort.R
 import org.wit.hillfort.models.HillfortModel
 import org.wit.hillfort.views.BaseView
+
 
 class HillfortListView :  BaseView(), HillfortListener {
 
@@ -24,6 +28,17 @@ class HillfortListView :  BaseView(), HillfortListener {
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         presenter.loadHillforts()
+
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.bottomAdd-> presenter.doAddHillfort()
+                R.id.bottomMain-> presenter.loadHillforts()
+                R.id.bottomMap-> presenter.doShowHillfortsMap()
+            }
+            true
+        }
     }
 
     override fun showHillforts(hillforts: List<HillfortModel>) {
@@ -31,19 +46,24 @@ class HillfortListView :  BaseView(), HillfortListener {
         recyclerView.adapter?.notifyDataSetChanged()
     }
 
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.item_add -> presenter.doAddHillfort()
-            R.id.item_map -> presenter.doShowHillfortsMap()
-            R.id.item_logout ->presenter.doLogout()
+            R.id.bottomAdd-> presenter.doAddHillfort()
+/*            R.id.item_map -> presenter.doShowHillfortsMap()
+            R.id.item_logout -> presenter.doLogout()*/
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+
 
     override fun onHillfortClick(hillfort: HillfortModel) {
         presenter.doEditHillfort(hillfort)

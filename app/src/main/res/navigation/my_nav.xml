@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/hillfortView">
+
+    <activity
+        android:id="@+id/hillfortView"
+        android:name="org.wit.hillfort.views.hillfort.HillfortView"
+        android:label="activity_hillfort"
+        tools:layout="@layout/activity_hillfort" />
+    <activity
+        android:id="@+id/hillfortMapView"
+        android:name="org.wit.hillfort.views.map.HillfortMapView"
+        android:label="activity_hillfort_maps"
+        tools:layout="@layout/activity_hillfort_maps" />
+    <activity
+        android:id="@+id/hillfortListView"
+        android:name="org.wit.hillfort.views.hillfortlist.HillfortListView"
+        android:label="activity_hillfort_list"
+        tools:layout="@layout/activity_hillfort_list" />
+</navigation>
