@@ -48,16 +48,16 @@ class HillfortListView :  BaseView(), HillfortListener {
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.bottomAdd-> presenter.doAddHillfort()
-/*            R.id.item_map -> presenter.doShowHillfortsMap()
-            R.id.item_logout -> presenter.doLogout()*/
+            R.id.item_add-> presenter.doAddHillfort()
+            R.id.item_map -> presenter.doShowHillfortsMap()
+            R.id.item_logout -> presenter.doLogout()
         }
         return super.onOptionsItemSelected(item)
     }

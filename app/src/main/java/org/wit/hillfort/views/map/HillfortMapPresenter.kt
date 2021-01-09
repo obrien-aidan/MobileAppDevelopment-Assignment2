@@ -35,7 +35,12 @@ class HillfortMapPresenter(view: BaseView) : BasePresenter(view) {
     }
 
     fun loadHillforts() {
-        view?.navigateTo(VIEW.LIST)
+        doAsync {
+            val hillforts = app.hillforts.findAll()
+            uiThread {
+                view?.showHillforts(hillforts)
+            }
+        }
     }
     fun doAddHillfort() {
         view?.navigateTo(VIEW.HILLFORT)

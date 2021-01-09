@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         app:menu="@menu/bottom_nav_menu"
         android:background="@color/colorAccent"
-        app:itemIconTint="@android:color/white"
-        app:itemTextColor="@android:color/white"/>
+        app:itemTextColor="@color/colorPrimary"
+        app:itemIconTint="@color/colorPrimary"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

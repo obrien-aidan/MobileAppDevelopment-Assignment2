@@ -23,7 +23,12 @@ class HillfortListPresenter(view: BaseView) : BasePresenter(view) {
     }
 
     fun loadHillforts() {
-        view?.navigateTo(VIEW.LIST)
+        doAsync {
+            val hillforts = app.hillforts.findAll()
+            uiThread {
+                view?.showHillforts(hillforts)
+            }
+        }
     }
     fun doLogout() {
         FirebaseAuth.getInstance().signOut()
