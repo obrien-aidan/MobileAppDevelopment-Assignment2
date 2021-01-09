@@ -7,7 +7,6 @@ import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import org.wit.hillfort.R
-import org.wit.hillfort.views.hillfortlist.HillfortListView
 import org.wit.hillfort.views.login.LoginView
 
 

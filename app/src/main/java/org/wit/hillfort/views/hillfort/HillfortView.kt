@@ -48,7 +48,7 @@ class HillfortView : BaseView(), AnkoLogger {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.bottomAdd-> presenter.doAddHillfort()
-                R.id.bottomMain-> presenter.loadHillforts()
+                R.id.bottomMain-> presenter.doShowHillfortsList()
                 R.id.bottomFav-> presenter.doShowHillfortsFav()
             }
             true
@@ -120,7 +120,7 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
             }
         }
         R.id.item_cancel -> {
-            finish()
+            presenter.doCancel()
         }
     }
     return super.onOptionsItemSelected(item)

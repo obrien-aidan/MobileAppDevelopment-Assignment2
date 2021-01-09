@@ -112,20 +112,20 @@ class HillfortPresenter(view: BaseView) : BasePresenter(view) {
                 app.hillforts.create(hillfort)
             }
             uiThread {
-                view?.finish()
+                view?.navigateTo(VIEW.LIST)
             }
         }
     }
 
     fun doCancel() {
-        view?.finish()
+        view?.navigateTo(VIEW.LIST)
     }
 
     fun doDelete() {
         doAsync {
             app.hillforts.delete(hillfort)
             uiThread {
-                view?.finish()
+                view?.navigateTo(VIEW.LIST)
             }
         }
     }
@@ -167,6 +167,9 @@ class HillfortPresenter(view: BaseView) : BasePresenter(view) {
     }
 
     fun loadHillforts() {
+        view?.navigateTo(VIEW.LIST)
+    }
+    fun doShowHillfortsList() {
         view?.navigateTo(VIEW.LIST)
     }
     fun doShowHillfortsFav() {
