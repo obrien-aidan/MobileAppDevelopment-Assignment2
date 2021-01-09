@@ -17,7 +17,7 @@
         tools:layout="@layout/activity_hillfort_maps" />
     <activity
         android:id="@+id/hillfortListView"
-        android:name="org.wit.hillfort.views.hillfortlist.HillfortListView"
+        android:name="org.wit.hillfort.views.hillfortlist.HillfortListViewdeletedelete"
         android:label="activity_hillfort_list"
         tools:layout="@layout/activity_hillfort_list" />-->
 </navigation>

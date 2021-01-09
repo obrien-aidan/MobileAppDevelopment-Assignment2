@@ -33,6 +33,9 @@ class HillfortListPresenter(view: BaseView) : BasePresenter(view) {
             }
         }
     }
+    fun doShowHillfortsList() {
+        view?.navigateTo(VIEW.LIST)
+    }
     fun doLogout() {
         FirebaseAuth.getInstance().signOut()
         app.hillforts.clear()
