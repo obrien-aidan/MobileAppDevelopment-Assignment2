@@ -34,5 +34,6 @@
     <string name="bottom_menu_add">Add</string>
     <string name="bottom_menu_home">Home</string>
     <string name="bottom_menu_map">Map</string>
+    <string name="bottom_menu_fav">Favorites</string>
 
 </resources>

@@ -1,21 +1,24 @@
-package org.wit.hillfort.views.hillfortlist
+package org.wit.hillfort.views.favourites
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_hillfort_list.*
 import org.wit.hillfort.R
 import org.wit.hillfort.models.HillfortModel
 import org.wit.hillfort.views.BaseView
+import org.wit.hillfort.views.hillfortlist.HillfortAdapter
+import org.wit.hillfort.views.hillfortlist.HillfortListener
 
 
-class HillfortListView :  BaseView(), HillfortListener {
+class HillfortListViewForFavourites :  BaseView(), HillfortListener {
 
-    lateinit var presenter: HillfortListPresenter
+    lateinit var presenter: HillfortListPresenterForFavourites
+    val showedList  = mutableListOf<HillfortModel>()
+    val favhillforts = mutableListOf<HillfortModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +26,7 @@ class HillfortListView :  BaseView(), HillfortListener {
         setSupportActionBar(toolbar)
         super.init(toolbar, false)
 
-        presenter = initPresenter(HillfortListPresenter(this)) as HillfortListPresenter
+        presenter = initPresenter(HillfortListPresenterForFavourites(view = this)) as HillfortListPresenterForFavourites
 
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
@@ -34,10 +37,7 @@ class HillfortListView :  BaseView(), HillfortListener {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.bottomAdd-> presenter.doAddHillfort()
-                R.id.bottomMain-> presenter.loadHillforts()
-/*
-                R.id.bottomMap-> presenter.doShowHillfortsMap()
-*/
+                R.id.bottomMain-> presenter.doShowHillfortsList()
                 R.id.bottomFav-> presenter.doShowHillfortsFav()
             }
             true
@@ -45,7 +45,15 @@ class HillfortListView :  BaseView(), HillfortListener {
     }
 
     override fun showHillforts(hillforts: List<HillfortModel>) {
-        recyclerView.adapter = HillfortAdapter(hillforts, this)
+
+
+        for(item in hillforts){
+            if(item.favourite){
+                favhillforts.add(item)
+            }
+        }
+        showedList.addAll(favhillforts)
+        recyclerView.adapter = HillfortAdapter(showedList, this)
         recyclerView.adapter?.notifyDataSetChanged()
     }
 

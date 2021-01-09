@@ -49,7 +49,7 @@ class HillfortView : BaseView(), AnkoLogger {
             when (item.itemId) {
                 R.id.bottomAdd-> presenter.doAddHillfort()
                 R.id.bottomMain-> presenter.loadHillforts()
-                R.id.bottomMap-> presenter.doShowHillfortsMap()
+                R.id.bottomFav-> presenter.doShowHillfortsFav()
             }
             true
         }

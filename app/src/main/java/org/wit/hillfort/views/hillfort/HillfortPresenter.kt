@@ -169,4 +169,7 @@ class HillfortPresenter(view: BaseView) : BasePresenter(view) {
     fun loadHillforts() {
         view?.navigateTo(VIEW.LIST)
     }
+    fun doShowHillfortsFav() {
+        view?.navigateTo(VIEW.FAVLIST)
+    }
 }
