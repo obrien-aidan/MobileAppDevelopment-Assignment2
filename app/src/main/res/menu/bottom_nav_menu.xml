@@ -13,9 +13,9 @@
         android:title="@string/bottom_menu_add"/>
     />
     <item
-        android:id="@+id/bottomMap"
-        android:icon="@drawable/ic_map"
+        android:id="@+id/bottomFav"
+        android:icon="@drawable/ic_fav_nav"
         android:menuCategory="secondary"
-        android:title="@string/bottom_menu_map"/>
+        android:title="@string/bottom_menu_fav"/>
     />
 </menu>

@@ -31,7 +31,7 @@ class HillfortMapView : BaseView(), GoogleMap.OnMarkerClickListener {
             map.setOnMarkerClickListener(this)
             presenter.loadHillforts()
         }
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+/*        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.bottomAdd-> presenter.doAddHillfort()
@@ -39,7 +39,7 @@ class HillfortMapView : BaseView(), GoogleMap.OnMarkerClickListener {
                 R.id.bottomMap-> presenter.doShowHillfortsMap()
             }
             true
-        }
+        }*/
     }
 
     override fun showHillfort(hillfort: HillfortModel) {
