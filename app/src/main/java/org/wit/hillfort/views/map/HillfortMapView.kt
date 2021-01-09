@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.Marker
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_hillfort_maps.*
 import org.wit.hillfort.R
 
@@ -29,6 +30,15 @@ class HillfortMapView : BaseView(), GoogleMap.OnMarkerClickListener {
             map = it
             map.setOnMarkerClickListener(this)
             presenter.loadHillforts()
+        }
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.bottomAdd-> presenter.doAddHillfort()
+                R.id.bottomMain-> presenter.loadHillforts()
+                R.id.bottomMap-> presenter.doShowHillfortsMap()
+            }
+            true
         }
     }
 

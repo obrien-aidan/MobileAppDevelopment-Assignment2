@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomMain"
+        android:icon="@drawable/ic_menu"
+        android:menuCategory="secondary"
+        android:title="@string/bottom_menu_home"/>
+    <item
+        android:id="@+id/bottomAdd"
+        android:icon="@drawable/ic_plus"
+        android:menuCategory="secondary"
+        android:title="@string/bottom_menu_add"/>
+    />
+    <item
+        android:id="@+id/bottomMap"
+        android:icon="@drawable/ic_map"
+        android:menuCategory="secondary"
+        android:title="@string/bottom_menu_map"/>
+    />
+</menu>

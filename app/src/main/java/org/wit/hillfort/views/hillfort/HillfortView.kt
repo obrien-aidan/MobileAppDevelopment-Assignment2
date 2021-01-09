@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.bumptech.glide.Glide
 import com.google.android.gms.maps.GoogleMap
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_hillfort.*
 import kotlinx.android.synthetic.main.activity_hillfort_list.*
 import org.jetbrains.anko.AnkoLogger
@@ -42,6 +43,15 @@ class HillfortView : BaseView(), AnkoLogger {
         chooseImage.setOnClickListener {
             presenter.cacheHillfort(hillfortTitle.text.toString(), description.text.toString(), rating1.rating,favourite1.isChecked)
             presenter.doSelectImage()
+        }
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.bottomAdd-> presenter.doAddHillfort()
+                R.id.bottomMain-> presenter.loadHillforts()
+                R.id.bottomMap-> presenter.doShowHillfortsMap()
+            }
+            true
         }
 
 /*        hillfortLocation.setOnClickListener {
