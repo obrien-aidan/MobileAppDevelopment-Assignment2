@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:elevation="24dp"
+    android:background="@color/colorCard"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorCard"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="91dp"
+            android:layout_height="71dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/change_hillfort_image" />
+
+
+        <TextView
+            android:id="@+id/hillfortTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="130dp"
+            android:textColor="@color/colorText2"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hillfortTitle"
+            android:layout_marginStart="130dp"
+
+            android:textColor="@color/colorPrimary" />
+
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@android:style/Widget.Material.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="135dp"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:numStars="5"
+            android:rating="1" />
+
+        <ToggleButton
+            android:id="@+id/favourite"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="585dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
