@@ -46,59 +46,51 @@
             android:layout_width="116dp"
             android:layout_height="106dp"
             android:layout_gravity="center"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="44dp"
             android:src="@drawable/location_pin"
             app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintHorizontal_bias="0.846"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="@style/Widget.AppCompat.ProgressBar"
-            android:layout_width="211dp"
-            android:layout_height="233dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="109dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="528dp"
+            android:layout_marginBottom="216dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signUp"
-            app:layout_constraintVertical_bias="0.516" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="192dp"
-            android:layout_marginEnd="36dp"
+            android:layout_width="287dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="164dp"
             android:ems="10"
             android:inputType="textEmailAddress"
             android:textColor="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="72dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="70dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="120dp"
             android:text="Email"
-            android:textAlignment="textEnd"
 
+            android:textAlignment="textEnd"
             android:textColor="@color/colorAccent"
             app:layout_constraintBaseline_toBaselineOf="@+id/email"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="239dp"
-            android:layout_height="wrap_content"
+            android:layout_width="286dp"
+            android:layout_height="49dp"
             android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="textPassword"
@@ -115,59 +107,53 @@
             android:id="@+id/textView2"
             android:layout_width="70dp"
             android:layout_height="29dp"
+            android:layout_marginStart="120dp"
             android:text="Password"
-            android:textAlignment="textEnd"
 
+            android:textAlignment="textEnd"
             android:textColor="@color/colorAccent"
             app:layout_constraintBaseline_toBaselineOf="@+id/password"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/textView" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/signUp"
             android:layout_width="169dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="292dp"
             android:background="@color/colorCard"
 
             android:text="Sign Up"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/logIn"
             android:layout_width="169dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="292dp"
+            android:layout_marginEnd="120dp"
+
             android:background="@color/colorCard"
 
-            android:textColor="@color/colorPrimary"
-
             android:text="Log In"
-            app:layout_constraintBottom_toBottomOf="@+id/signUp"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/signUp"
-            app:layout_constraintTop_toBottomOf="@+id/password"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="230dp"
             android:layout_height="91dp"
             android:layout_centerInParent="true"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="52dp"
             android:ems="10"
-            android:text="HILLFORT"
+               android:text="HILLFORT"
             android:textColor="@color/colorAccent"
             android:textSize="50sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintHorizontal_bias="0.544"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

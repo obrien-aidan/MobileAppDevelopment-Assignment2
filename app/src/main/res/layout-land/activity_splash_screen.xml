@@ -10,21 +10,19 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#D8E4F0"
-        app:srcCompat="@drawable/splashscreen" />
+        android:background="#D8E4F0"/>
+        <!--app:srcCompat="@drawable/splashscreen"-->
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="167dp"
-        android:layout_height="182dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="169dp"
+        android:layout_height="230dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center"
 
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="495dp"
+        android:layout_marginEnd="474dp"
+        android:layout_marginBottom="74dp"
         android:src="@drawable/location_pin"
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +35,8 @@
         android:layout_height="175dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="175dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="110dp"
 
 
         />
@@ -49,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="374dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="146dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="textPersonName"
@@ -64,8 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="430dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="199dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="textPersonName"
