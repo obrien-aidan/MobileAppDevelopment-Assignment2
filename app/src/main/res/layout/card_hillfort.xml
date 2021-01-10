@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="8dp"
     android:elevation="24dp"
-    android:background="@color/colorCard">
+    android:background="@color/colorCard"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="2dp">
 
 
-<RelativeLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@color/colorCard">
 
-    <ImageView
-        android:id="@+id/imageIcon"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="16dp"
-        android:contentDescription="@string/change_hillfort_image" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="90dp"
+            android:layout_height="89dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/change_hillfort_image" />
 
 
     <TextView
@@ -31,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:textSize="30sp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="130dp"
         android:textColor="@color/colorText2"
 
         />
@@ -41,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/hillfortTitle"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="130dp"
 
             android:textColor="@color/colorPrimary"
             />
@@ -60,21 +64,23 @@
     android:rating="1" />
 
 
-    <ToggleButton
-        android:id="@+id/favourite"
+        <ToggleButton
+            android:id="@+id/favourite"
 
-        android:layout_width="99dp"
-        android:layout_height="98dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/button_favorite"
-        android:checked="false"
-        android:clickable="false"
-        android:contextClickable="false"
-        android:text=""
-        android:textOff=""
-        android:textOn="" />
-</RelativeLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="297dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="34dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

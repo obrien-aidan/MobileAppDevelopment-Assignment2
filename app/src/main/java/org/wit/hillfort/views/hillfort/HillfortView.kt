@@ -29,7 +29,7 @@ class HillfortView : BaseView(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hillfort)
 
-        super.init(toolbarAdd, true);
+        super.init(toolbarAdd, false);
 
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync {

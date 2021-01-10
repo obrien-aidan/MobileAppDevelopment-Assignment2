@@ -14,7 +14,9 @@ class LoginView : BaseView() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+/*
         init(toolbar, false)
+*/
         progressBar.visibility = View.GONE
 
         presenter = initPresenter(LoginPresenter(this)) as LoginPresenter
