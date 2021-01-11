@@ -1,4 +1,4 @@
-# HILLFORTS
+# HILLFORTS 2
 ### An android application where to help users log and view hillforts. Developed using kotlin and android studio. 
 
 latest code is commited to 'release branch'
@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=TAnPDcTgLwQ
 To setup, download project and add google api key
 ## Features
 
-- MCP pattern
+- MVP pattern
 - Firebase authentication
 - Add a hillfort
 - rate hillforts
