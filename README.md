@@ -1,4 +1,5 @@
 # HILLFORTS 2
+![](MobileAppDevelopment-Assignment2/app/src/main/res/drawable/location_pin.png)
 ### An android application where to help users log and view hillforts. Developed using kotlin and android studio. 
 
 latest code is commited to 'release branch':
