@@ -1,7 +1,8 @@
 # HILLFORTS 2
 ### An android application where to help users log and view hillforts. Developed using kotlin and android studio. 
 
-latest code is commited to 'release branch'
+latest code is commited to 'release branch':
+https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/tree/release-branch
 
 link to demo video:
 https://www.youtube.com/watch?v=TAnPDcTgLwQ
