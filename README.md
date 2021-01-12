@@ -1,5 +1,10 @@
 # HILLFORTS 2
 ![](mdimage.PNG)
+
+<img align="left" width="80" height="80" src="https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/blob/master/mdimage.PNG" alt="project app icon">
+
+# HILLFORTS 2
+
 ### An android application where to help users log and view hillforts. Developed using kotlin and android studio. 
 
 link to demo video:
