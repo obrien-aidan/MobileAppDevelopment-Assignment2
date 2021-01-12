@@ -1,7 +1,4 @@
-# HILLFORTS 2
-![](mdimage.PNG)
-
-<img align="left" width="80" height="80" src="https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/blob/master/mdimage.PNG" alt="project app icon">
+<img align="left" width="110" height="80" src="https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/blob/master/mdimage.PNG" alt="project app icon">
 
 # HILLFORTS 2
 
