@@ -1,4 +1,4 @@
-<img align="left" width="110" height="180" src="https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/blob/master/mdimage.PNG" alt="project app icon">
+<img align="left" width="110" height="160" src="https://github.com/obrien-aidan/MobileAppDevelopment-Assignment2/blob/master/mdimage.PNG" alt="project app icon">
 
 # HILLFORTS 2
 
